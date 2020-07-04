@@ -29,4 +29,13 @@ class User extends Authenticatable
     {
         return $this->hasMany(StressTest::class);
     }
+
+    public function homeUrl()
+    {
+        if ($this->is_admin) {
+            return route('admin.home2');
+        }
+        
+        return route('home');
+    }
 }
