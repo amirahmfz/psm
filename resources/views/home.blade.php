@@ -21,6 +21,12 @@
                     Dengan kata lain, stres merupakan tindak balas fizikal yang biasa terhadap satu perkara atau peristiwa yang boleh menyebabkan ketidakseimbangan berlaku. </p>
                    <p> Menurut portal <a target="_blank" href="http://www.myhealth.gov.my/pengurusan-stres-2/"> MyHealth</a> Stres atau tekanan adalah tindak balas fizikal, emosi dan mental seseorang terhadap sebarang perubahan atau tuntutan. </p>
 
+                </div>
+            </div>
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+
                    <p><strong>E-Profiling Pengurusan Stres</strong> merupakan satu laman web yang mengumpul maklumat pengguna untuk pengguna memantau tahap 
                     stres yang dialami dari semasa ke semasa dengan cara:</p>
                 <p style="text-indent:50px" >1) Pengguna perlu menjawab soalan yang disediakan pada halaman <strong> Soalan </strong></p>
@@ -35,3 +41,18 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+
+<script>
+
+$(document).ready(function () {
+
+    $success = '{{ request('alert') }}';
+    if ($success == 'success') alert('Berjaya mendaftar');
+
+})
+
+</script>
+
+@endpush

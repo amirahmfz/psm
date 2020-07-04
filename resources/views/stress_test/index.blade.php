@@ -44,7 +44,11 @@
                       </div>
                     @endforeach
 
-                   <center> <button type="submit" class="btn btn-primary" >Tahap Stres</button> {{ session('level', '') }} </center>
+                   <center> <button type="submit" class="btn btn-primary" >Tahap Stres</button> 
+                   
+                   <span style="font-size: 24px;">{{ session('level', '') }} </span>
+                   
+                   </center>
 
                 </form>
             </div>
