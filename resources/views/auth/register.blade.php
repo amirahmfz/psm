@@ -78,8 +78,8 @@
 
                             <div class="col-md-6">
                                   <select class="form-control" name="gender" id="gender">
-                                    <option value="Male">Lelaki</option>
-                                    <option value="Female">Perempuan</option>
+                                    <option value="Lelaki">Lelaki</option>
+                                    <option value="Perempuan">Perempuan</option>
                                   </select>
 
                                 @if ($errors->has('gender'))
